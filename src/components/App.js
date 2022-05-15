@@ -8,9 +8,15 @@ import Login from "./Login"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
+import Background from './bacground.jpg';
 
 function App() {
   return (
+    <div style={{
+      background: `url(${Background})`,
+
+    }}
+>
     <Container
       className="d-flex align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
@@ -29,6 +35,7 @@ function App() {
         </Router>
       </div>
     </Container>
+    </div>
   )
 }
 

@@ -33,30 +33,30 @@ export default function Signup() {
 
   return (
     <>
-      <Card>
+      <Card style={{borderRadius:25 ,backgroundColor:'#0F4DA7',height:500 }}>
         <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
+          <h2 className="text-center mb-4" style={{color:'white'}}>Sign Up</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
+              <Form.Label style={{color:'white'}}>Email</Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
+              <Form.Label style={{color:'white'}}>Password</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
             <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
+              <Form.Label style={{color:'white'}}>Password Confirmation</Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} style={{width:'100%' ,borderRadius:25 , backgroundColor:'black',marginTop:50}} type="submit">
               Sign Up
             </Button>
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2">
+      <div className="w-100 text-center mt-2" style={{color:'white'}}>
         Already have an account? <Link to="/login">Log In</Link>
       </div>
     </>

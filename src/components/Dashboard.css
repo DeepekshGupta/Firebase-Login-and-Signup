@@ -1,0 +1,13 @@
+
+.sty {
+    height:200px;
+    width:400px;
+    background-color: aliceblue !important;
+    border-radius: 1.5rem;
+    justify-content: center;
+    display: flex;
+
+    flex-direction: column;
+    
+  }
+  
