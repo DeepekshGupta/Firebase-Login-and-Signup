@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-
+import styled from 'styled-components';
 
 export default function Login() {
   const emailRef = useRef()
@@ -30,8 +30,9 @@ export default function Login() {
   return (
     
     <>
-      
-      <Card style={{borderRadius:25 ,backgroundColor:'#0F4DA7',height:500 }}>
+
+       <LonginConatiner>
+      <Card style={{borderRadius:25 ,backgroundColor:'#0F4DA7',height:500,width:350,marginTop:200}}>
         <Card.Body>
           <h2 className="text-center mb-5" style={{color:'white'}}>Please Log In</h2>
           {error && <Alert variant="danger">{error}</Alert>}
@@ -56,10 +57,26 @@ export default function Login() {
           </div>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2" style={{color:'white'}}>
+      <div className="w-100 text-center mt-2" style={{color:'black'}}>
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
-      
+      </LonginConatiner>
     </>
   )
 }
+
+
+
+const LonginConatiner=styled.div`
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+height:100%;
+width:100%;
+align-items:center;
+`
+
+
+

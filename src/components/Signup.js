@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
+import styled from 'styled-components';
 
 export default function Signup() {
   const emailRef = useRef()
@@ -33,7 +34,8 @@ export default function Signup() {
 
   return (
     <>
-      <Card style={{borderRadius:25 ,backgroundColor:'#0F4DA7',height:500 }}>
+      <SignupConatiner>
+      <Card style={{borderRadius:25 ,backgroundColor:'#0F4DA7',height:500,width:350,marginTop:200 }}>
         <Card.Body>
           <h2 className="text-center mb-4" style={{color:'white'}}>Sign Up</h2>
           {error && <Alert variant="danger">{error}</Alert>}
@@ -56,9 +58,22 @@ export default function Signup() {
           </Form>
         </Card.Body>
       </Card>
-      <div className="w-100 text-center mt-2" style={{color:'white'}}>
+      <div className="w-100 text-center mt-2" style={{color:'black'}}>
         Already have an account? <Link to="/login">Log In</Link>
       </div>
+      </SignupConatiner>
     </>
   )
 }
+
+
+const SignupConatiner=styled.div`
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+height:100%;
+width:100%;
+align-items:center;
+`
