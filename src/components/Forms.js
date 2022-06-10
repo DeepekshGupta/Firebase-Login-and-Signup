@@ -3,7 +3,7 @@ import { Form,Card, Button, Alert,Row,Col } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { db } from "../firebase"
-import { collection,serverTimestamp,addDoc } from "@firebase/firestore" 
+import { collection,serverTimestamp,addDoc } from "firebase/firestore" 
 
 import styled from 'styled-components';
 
