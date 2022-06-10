@@ -10,6 +10,7 @@ import UpdateProfile from "./UpdateProfile"
 import Background from './bacground.jpg';
 import Profile from "./profile"
 import styled from 'styled-components';
+import Forms from "./Forms"
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/profile" component={Profile} />
               <Route path="/login" component={Login} />
+              <Route path="/Forms" component={Forms} />
               <Route path="/forgot-password" component={ForgotPassword} />
             </Switch>
           </AuthProvider>

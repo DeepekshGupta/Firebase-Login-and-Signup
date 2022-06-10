@@ -32,7 +32,7 @@ export default function Profile() {
         <h2 className="text-center mb-4" style={{color:'white',}}>Profile</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <div style={{flexDirection:'row',display:'flex'}}>
-        <strong style={{color:'white'}}>Email:</strong> <div style={{color:'white',marginLeft:20}}>{currentUser.email}</div></div>
+        <strong style={{color:'white'}}>Email:</strong> <div style={{color:'white',marginLeft:20}}>Akshat</div></div>
         <Link to="/update-profile" className="btn btn-primary w-100 mt-3" style={{borderRadius:25 ,backgroundColor:'black'}}>
           Update Profile
         </Link>

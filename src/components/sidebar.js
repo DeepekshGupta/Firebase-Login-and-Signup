@@ -19,12 +19,18 @@ function Sidebar() {
             <h3>Profile</h3>
           </Link2>
           </Link>
+          <Link to="/Forms">
+          
           <Link2>
-            <h3>Invoices</h3>
+            <h3>Enter Work</h3>
           </Link2>
+
+          </Link>
+          <Link >
           <Link2>
-            <h3>Reports</h3>
+            <h3>Reviews</h3>
           </Link2>
+          </Link>
         </Links>
         <ContactContainer>
           <span>Having troubles?</span>
